@@ -1,0 +1,424 @@
+/* TavernDashboard.css */
+
+/* Main Layout */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  background-color: #62401B; /* amber-800 */
+}
+
+/* Left Sidebar */
+.sidebar {
+  width: 12rem;
+  background-color: #824915;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-logo {
+  height: 6rem;
+  background-color: #62401B ;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar-title {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex-grow: 1;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+.menu-item.active {
+  background-color: #78350f; /* amber-900 */
+  border-radius: 0.25rem;
+}
+
+.menu-indicator {
+  width: 1rem;
+  height: 1rem;
+  background-color: #fde047; /* yellow-300 */
+  border-radius: 0.125rem;
+}
+
+.menu-indicator-outline {
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid white;
+  border-radius: 0.125rem;
+}
+
+.logout-button {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  background-color: white;
+  overflow: auto;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb; /* gray-200 */
+}
+
+.search-container {
+  position: relative;
+  width: 100%;
+  max-width: 28rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  background-color: #62401B; /* amber-800 */
+  color: white;
+}
+
+.search-icon {
+  position: absolute;
+  right: 3.75rem;
+  top: 0.5rem;
+  color: white;
+}
+
+.user-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.username {
+  color: #FFE6CC; /* blue-400 */
+}
+
+/* Dashboard Content */
+.dashboard-content {
+  padding: 1.5rem;
+}
+
+.dashboard-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1e293b; /* slate-800 */
+  margin-bottom: 1rem;
+}
+
+/* Inventory Section */
+.inventory-section {
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.date-range {
+  font-size: 0.75rem;
+  color: #6b7280; /* gray-500 */
+  margin-bottom: 1rem;
+}
+
+.bar-chart-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+  height: 12rem;
+}
+
+.bar-chart-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 16.666667%;
+}
+
+.bar-duo {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 0.25rem;
+  height: 10rem;
+}
+
+.bar {
+  width: 2rem;
+}
+
+.bar.required {
+  background-color: #62401B; /* amber-800 */
+}
+
+.bar.actual {
+  background-color: #e5e7eb; /* gray-200 */
+}
+
+.bar-label {
+  font-size: 0.75rem;
+  text-align: center;
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
+.chart-legend {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.75rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+}
+
+.legend-color {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 9999px;
+  margin-right: 0.25rem;
+}
+
+.legend-color.blue {
+  background-color: #62401B; /* blue-500 */
+}
+
+.legend-color.gray {
+  background-color: #d1d5db; /* gray-300 */
+}
+
+/* Metrics Container */
+.metrics-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.metric-card {
+  border: 1px solid #e5e7eb; /* gray-200 */
+  border-radius: 0.25rem;
+  padding: 1rem;
+  width: 33.333333%;
+}
+
+.section-subtitle {
+  font-size: 0.75rem;
+  color: #9ca3af; /* gray-400 */
+  margin-bottom: 1rem;
+}
+
+/* Overall Rating */
+.rating-circles {
+  position: relative;
+  height: 12rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5rem;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle.orange {
+  width: 7rem;
+  height: 7rem;
+  background-color: #fdba74; /* orange-300 */
+  left: 45%;
+  top: 20%;
+}
+
+.circle.purple {
+  width: 6rem;
+  height: 6rem;
+  background-color: #c084fc; /* violet-400 */
+  left: 15%;
+  top: 15%;
+}
+
+.circle.cyan {
+  width: 6rem;
+  height: 6rem;
+  background-color: #22d3ee; /* cyan-400 */
+  left: 25%;
+  top: 60%;
+}
+
+.circle-content {
+  text-align: center;
+}
+
+.circle-value {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.circle-label {
+  font-size: 0.75rem;
+}
+
+.purple .circle-content,
+.cyan .circle-content {
+  color: white;
+}
+
+/* High Spender Customers */
+.spenders-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  gap: 1.75rem;
+}
+
+.spender-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.spender-profile {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.spender-avatar {
+  width: 2rem;
+  height: 2rem;
+  background-color: #d1d5db; /* gray-300 */
+  border-radius: 9999px;
+}
+
+/* Customer Order Views */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.report-link {
+  color: #3b82f6; /* blue-500 */
+  font-size: 0.75rem;
+}
+
+.order-stats {
+  margin-bottom: 1rem;
+}
+
+.stats-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.stats-change {
+  display: flex;
+  align-items: center;
+  font-size: 0.75rem;
+}
+
+.stats-up {
+  color: #3b82f6; /* blue-500 */
+}
+
+.stats-period {
+  color: #9ca3af; /* gray-400 */
+  margin-left: 0.25rem;
+}
+
+.line-chart {
+  height: 8rem;
+  display: flex;
+  align-items: flex-end;
+}
+
+.legend-color.current {
+  background-color: #4f46e5;
+}
+
+.legend-color.last-week {
+  border: 1px solid #000000;
+  background-color: transparent;
+}
+
+.chart {
+  width: 100%;
+  height: 100%;
+}
+
+.chart-months {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: #9ca3af; /* gray-400 */
+  margin-top: 0.5rem;
+}
+
+/* Right Panel */
+.right-panel {
+  width: 15rem;
+  height: 20rem;
+  border-radius: 1rem;
+  background-color: #92400e; /* amber-800 */
+}
+
+.logo-img {
+  width: 130px;
+  height: 120px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Right-Image {
+  background-size: cover;
+  width: 260px;
+  height: 330px;
+  border-radius: 1rem;
+}
+
+.avatar-yor {
+  background-size: cover;
+  width: 32px;
+  height: 32px;
+  border-radius: 1rem;
+}

@@ -1,0 +1,13 @@
+.login-image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-image-section {
+  width: 400px;
+  height: 470px;
+  background-color: #5d4037;
+  border-radius: 1.5rem;
+  object-fit: cover;
+}

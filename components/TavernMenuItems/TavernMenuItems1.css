@@ -1,0 +1,516 @@
+/* TavernsPage.css */
+
+/* Main Layout */
+.taverns-container {
+  display: flex;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+/* Left Sidebar */
+.sidebar {
+  width: 12rem;
+  background-color: #824915;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-logo {
+  height: 6rem;
+  background-color: #62401B ;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar-title {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #d7ccc8;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  flex-grow: 1;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 0.75rem;
+  padding: 0.5rem;
+}
+
+.menu-item.active {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0.25rem;
+}
+
+.menu-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 1px solid white;
+  border-radius: 0.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-icon.dashboard-icon:before {
+  content: "";
+  display: block;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: white;
+}
+
+.menu-icon.tavern-icon {
+  background-color: #d7ccc8;
+  border: none;
+}
+
+.logout-button {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  overflow: auto;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.search-container {
+  position: relative;
+  width: 18rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  background-color: #62401B;
+  color: white;
+  border: none;
+}
+
+.search-icon {
+  position: absolute;
+  right: 3.75rem;
+  top: 0.5rem;
+  color: white;
+}
+
+.user-section {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.user-avatar {
+  width: 2rem;
+  height: 2rem;
+  background-color: #FFE6CC;
+  border-radius: 9999px;
+}
+
+.username {
+  color: #1f2937;
+  font-size: 0.875rem;
+}
+
+/* Content Layout */
+.content-wrapper {
+  display: flex;
+  flex: 1;
+  padding: 1.5rem;
+}
+
+.left-content {
+  width: 65%;
+  padding-right: 1.5rem;
+  border-right: 1px solid #e5e7eb;
+}
+
+.right-content {
+  width: 35%;
+  padding-left: 1.5rem;
+}
+
+.page-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #374151;
+  margin-bottom: 1.5rem;
+}
+
+.section-title{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1e293b; /* slate-800 */
+  margin-bottom: 1rem;
+}
+
+description-section {
+    margin: 2rem 0;
+  }
+  
+  .description-title {
+    font-family: sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #2C3E50;
+    margin-bottom: 1.5rem;
+  }
+  
+  .description-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  
+  .description-image {
+    width: 150px;
+    height: 150px;
+    background-color: #D9D9D9;
+    flex-shrink: 0;
+  }
+  
+  .description-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #2C3E50;
+    max-width: 600px;
+  }
+  
+  .product-name {
+    font-weight: 700;
+  }
+
+/* Taverns Grid */
+.taverns-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.tavern-card1 {
+  background-color: #d1d5db;
+  border-radius: 0.5rem;
+  min-height: 13rem;
+  display: flex;
+  align-items: flex-end;
+  padding: 0.75rem;
+}
+
+.tavern-card1.highlighted {
+  background-color: #d1d5db;
+  border: 2px solid #fbd38d;
+}
+
+.tavern-info {
+  width: 100%;
+}
+
+.tavern-name {
+  font-weight: bold;
+  color: #1f2937;
+  font-size: 0.875rem;
+}
+
+.tavern-id {
+  color: #6b7280;
+  font-size: 0.75rem;
+}
+
+/* Location Section */
+.location-map {
+  height: 13rem;
+  background-color: #d1d5db;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* Reputation Section */
+.reputation-section {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.reputation-default {
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+}
+
+.reputation-chart-container {
+  position: relative;
+  height: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reputation-chart {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background-color: #e2e8f0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reputation-progress {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 100%, 50% 100%);
+  background-color: #4f46e5;
+}
+
+.reputation-center {
+  width: 7rem;
+  height: 7rem;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.reputation-percentage {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.reputation-label {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.reputation-tooltip {
+  position: absolute;
+  top: 0;
+  right: 3rem;
+  background-color: #3730a3;
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 0.25rem;
+}
+
+.tooltip-content {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.tooltip-subtitle {
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+
+/* Orders Section */
+.orders-section {
+  margin-top: 1rem;
+}
+
+.orders-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.view-report {
+  color: #4f46e5;
+  font-size: 0.75rem;
+}
+
+.orders-info {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+}
+
+.total-price {
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.price-change {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin: 0.25rem 0;
+}
+
+.change-indicator {
+  color: #4f46e5;
+}
+
+.change-percentage {
+  color: #4f46e5;
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.change-period {
+  color: #6b7280;
+  font-size: 0.75rem;
+}
+
+.orders-date {
+  color: #6b7280;
+  font-size: 0.75rem;
+}
+
+.orders-chart-container {
+  margin-top: 1rem;
+}
+
+.orders-chart {
+  height: 8rem;
+  margin-bottom: 0.5rem;
+}
+
+.line-chart {
+  width: 100%;
+  height: 100%;
+}
+
+.chart-days {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.day-label {
+  color: #6b7280;
+  font-size: 0.75rem;
+}
+
+.chart-legend {
+  display: flex;
+  gap: 1rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.legend-color {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+}
+
+.legend-color.current {
+  background-color: #4f46e5;
+}
+
+.legend-color.last-week {
+  border: 1px solid #6b7280;
+  background-color: transparent;
+}
+
+/* Bottom Section Styles */
+.bottom-section {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.description-section {
+  flex: 1;
+}
+
+.MenuItemsImage {
+  width: 12rem;
+  height: 10rem;
+  border-radius: 1.5rem;
+  background-color: #989898; /* amber-800 */
+}
+
+.MenuItems {
+  background-size: cover;
+  width: 100%;     /* ← Make it responsive to container */
+  height:9rem;    /* ← Smaller height to fit with padding */
+  border-radius: .5rem;
+}
+
+/* Replace your existing .ProductImage CSS with this: */
+.ProductImage1 {
+  width: 12rem;
+  height: 15rem;
+  display: block;        /* Changed from 'auto' to 'block' */
+  margin: 0 auto;        /* Changed from 'auto' to '0 auto' for horizontal centering */
+  border-radius: 0.5rem; /* Optional: matches your other images */
+}
+
+/* Alternative method - if you want to center within a container: */
+.description-image {
+  width: 150px;
+  height: 150px;
+  background-color: #D9D9D9;
+  flex-shrink: 0;
+  display: flex;           /* Add this */
+  justify-content: center; /* Add this */
+  align-items: center;     /* Add this */
+}
+
+/* Or if you want the image to be fully responsive and centered: */
+.ProductImage1-responsive {
+  width: 100%;
+  max-width: 12rem;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+}
+
+.logo-img {
+  width: 130px;
+  height: 120px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
